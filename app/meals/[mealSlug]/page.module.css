@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Sriracha";
+  src: url("../../../public/fonts/Sriracha-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header {
+  display: flex;
+  padding: 2rem 1rem;
+  gap: 3rem;
+  margin: auto;
+  max-width: 80rem;
+}
+
+.image {
+  position: relative;
+  width: 30rem;
+  height: 20rem;
+}
+
+.header img {
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0.1rem 0.3rem 0.5rem rgba(130, 130, 130, 0.5);
+  animation: fade-slide-in-from-left 1s ease-out forwards;
+}
+
+.headerText {
+  padding: 0.5rem 1rem 0 1rem;
+  max-width: 40rem;
+  animation: fade-slide-in-from-right 1s ease-out forwards;
+}
+
+.headerText h1 {
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.creator {
+  font-size: 1.5rem;
+  color: #353535;
+  font-style: italic;
+}
+
+.creator a {
+  background: #f9572a;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.creator a:hover,
+.creator a:active {
+  filter: brightness(90%);
+}
+
+.summary {
+  font-size: 1.5rem;
+  color: #353535;
+}
+
+.instructions {
+  font-family: "Sriracha", cursive;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background: linear-gradient(135deg, #9b583d, #6a3e2d, #45291c);
+  color: #ffeed7;
+  border-radius: 8px;
+  box-shadow: 0.1rem 0.3rem 0.5rem rgba(130, 130, 130, 0.5);
+  padding: 2rem;
+  max-width: 60rem;
+  margin: 2rem auto;
+  animation: fade-slide-in-from-bottom 1s ease-out forwards;
+}
+
+.loading {
+  font-size: 3rem;
+  text-align: center;
+  color: #e1570c;
+  font-weight: bold;
+  animation: flash 1s ease-in-out infinite alternate;
+}
+
+@keyframes fade-slide-in-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-slide-in-from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-slide-in-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

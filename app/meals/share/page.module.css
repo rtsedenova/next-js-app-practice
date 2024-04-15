@@ -5,7 +5,7 @@
   margin: 3rem auto 5rem auto;
   width: 90%;
   max-width: 75rem;
-  color: #222; /* Dark text color */
+  color: rgb(27, 27, 61);
   font-size: 1.5rem;
 }
 
@@ -24,7 +24,7 @@
   width: 60%;
   max-width: 75rem;
   margin: 3rem auto;
-  background-color: #343434;
+  background: linear-gradient(to bottom, rgb(27, 27, 61), rgb(13, 13, 31));
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -36,12 +36,13 @@
 
 .form label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Arial", sans-serif;
   text-transform: uppercase;
-  color: #f2f2f2;
+  color: rgb(181, 181, 210);
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .form input,
